@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+    *{
+        padding:0px ;
+        margin: 0px;
+    }
+    .container{
+        margin:110px;
+    }
+
+    .left {
+        background-color: rgba(157, 220, 236, 0.548);
+        flex-direction: row;
+        border-right: none;
+        width: 130%;
+        height:40em;
+    }
+
+    .left p {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        font-size: large;
+    }
+
+    .c1 {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        margin-block: 10%;
+        margin-inline: 20%;
+        flex-direction: column;
+    }
+
+    .c1 button {
+        padding: 14px;
+        padding-inline-end: 25px;
+        margin: 8px;
+        margin-top: 5px;
+        border-radius: 20px;
+        background-color: white;
+        border-style: none;
+    }
+
+    .c2 {
+        display: flex;
+        flex-flow: column;
+        width: 20%;
+        margin-left: 6em;
+        height:50%;
+        overflow:auto;
+    }
+    .c2::-webkit-scrollbar{
+        display: none;
+    }
+
+    .c2 img {
+        border: 2px solid white;
+        height: 90px;
+        margin: 5px;
+    }
+
+    .navbar {
+        list-style: none;
+        margin-right:10% ;
+    }
+
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+        margin: 20px;
+        padding-inline:40px ;
+        font-size: large;
+    }
+    li{
+        list-style: none;
+    }
+    .container1{
+        display: flex;
+    }
+    .right{
+        flex-direction: row;
+        background-color:rgb(233, 227, 227);
+        height: 40em;
+    }
+    
+    #pname{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 27px 18px;
+    margin-right:10% ;
+    }
+    #pname ul li:nth-child(1){
+        font-size: 1.5em;
+    }
+    #pname ul li:nth-child(2){
+        font-size: 0.9em;
+    }
+    #pname li i{
+        color:rgb(241, 100,35) ;
+        font-size: 1.5em;
+    }
+    #pname1{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 27px 18px;
+    margin-right:10% ;
+    }
+    #pname1 li i{
+        color:rgb(241, 100, 35) ;
+    }
+    #pname1 li i:nth-child(5){
+        color: grey;
+        margin-right: 15px;
+    }
+    #pname1 li:nth-child(2){
+        color:rgb(241, 100, 35);
+        text-decoration: underline ;
+    }
+    #pname1 li:nth-child(3){
+        font-weight: bold;
+    }
+
+    .pname2{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 27px 0px;
+}
+.container2{
+        margin-right:10% ;
+        margin-left: 10%;
+        height: 270px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .container2::-webkit-scrollbar{
+        display: none;
+    }
+    .pname2 li{
+        font-weight: bold;
+        font-size: larger;
+    }
+    .pname2 li:nth-child(3) button{
+        color:white;
+        background-color: rgb(241, 100,35);
+        padding: 4%;
+        width: 103px;
+        border: none;
+        border-radius: 20px;
+    }
+    .pname2 li:nth-child(2) i{
+        border: none;
+        margin: 10px;
+        color: rgb(241, 100,35);
+    }
+    .pname3{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0px;
+    padding: 10px;
+    font-weight: 800;
+
+    }
+
+    table{
+        border-collapse: collapse;
+        border-spacing: 20px 0px;
+        width: 100%;
+        margin:0.5em 0px;
+    }
+
+    th{
+        border-bottom:1px solid rgb(168, 167, 167) ;
+        text-align: left;
+        padding: 1em 0em;
+    }
+
+    td{
+        width:150px;
+        text-align: left;
+        border-bottom: 1px dotted rgb(168, 167, 167);
+        padding: 1em 0em;
+    }
+    .c3{
+        position: relative;
+        top: -50%;
+    left:55%;
+    }
+    .c3 img{
+        height:300px;
+        width: 300px;
+        border: 2px solid white;
+        border-radius: 10px;
+        box-shadow: 2px;
+        
+    }
+    
+</style>
+
+</head>
+<body>
+   <div class="container">
+    <div class="container1">
+        <!-- Left container -->
+        <div class="left">
+            <p>Home/<b>Product Detail page</b></p>
+            <div class="c1">
+                <h2>Tags:</h2>
+                <div>
+                    <button>Kitchen</button>
+                    <button>L-Shape</button>
+                    <button>Sustainable</button>
+                </div>
+            </div>
+            <div class="c2">
+                <img src="img.jpg" alt="" srcset="">
+                <img src="img2.jpg" alt="" srcset="">
+                <img src="img3.jpg" alt="" srcset="">
+                <img src="img.jpg" alt="" srcset="">
+                <img src="img2.jpg" alt="" srcset="">
+                <li><i class='bx bx-chevron-down'></i></li>
+            </div>
+            <div class="c3">
+                <img src="img.jpg" alt="">
+            </div>
+        </div>   
+       <!-- Right container -->
+        <div class="right">
+            <nav class="navbar">
+                <ul id="list">
+                    <li>Navigation Category A   <i class='bx bx-chevron-down'></i></li>
+                    <li>Navigation Item A</li>
+                </ul>
+            </nav>
+            <ul id="pname">
+                <ul>
+                    <li ><h2>Product Name ABC</h2></li>
+                    <li>Product Category Name (Example:Plywood)</li>
+                </ul>
+                <li>
+                    <i class='bx bx-heart'></i>
+                </li>
+            </ul>
+            <ul id="pname1">
+                
+                <li><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star'></i>  4.4&emsp;(328 reviews)</li>
+                <li>Build My Project</li>
+                <li style="font-size: 30px;"><b>₹ 2110.00</b><small>per sheet</small></li>
+            </ul>
+            <div class="container2">
+                <h3>Product Description</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea eaque esse, repellendus non debitis. Voluptate, dignissimos atque unde et, tempora tenetur perspiciatis fugit adipisci, nihil odit quas quae illo autem est eaque reiciendis ratione. Iure fuga doloribus magni ipsa blanditiis. Dicta, nihil! Quisquam explicabo debitis voluptates veritatis mollitia iste animi amet hic magni vero in, ad, asperiores doloribus adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur sapiente, ut saepe eveniet distinctio explicabo soluta perspiciatis rem nemo aliquid provident? Nobis facilis voluptatibus fuga, commodi obcaecati voluptates alias dolore adipisci, totam explicabo quasi officia eos laboriosam accusantium ad eligendi nisi. Voluptates, illo quam, laborum quo, perspiciatis quisquam a quod veritatis itaque odio ut dolore dolorem accusamus pariatur consequatur. </p>
+                
+                <ul class="pname2">
+                    <li>Available online 189</li>
+                    <li>Quantity<i class='bx bx-minus' ></i>1<i class='bx bx-plus' ></i></li>
+                    <li><button>Add to Cart</button></li>
+                </ul>
+
+                <ul class="pname3">
+                    <li>Product Specifications</li>
+                    <li>Reviews</li>
+                    <li>FAQs</li>
+                </ul>
+                <hr>
+                
+                <table>
+                    <tr>
+                        <th>
+                            Category title A
+                        </th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Field Name</td>
+                        <td>Field Values</td>
+                    </tr>
+                    <tr>
+                        <td>Field Name</td>
+                        <td>Field Values</td>
+                    </tr>
+                    <tr>
+                        <td>Field Name</td>
+                        <td>Field Values</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th>Category title B</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Field Name</td>
+                        <td>Field Values</td>
+                    </tr>
+                    <tr>
+                        <td>Field Name</td>
+                        <td>Field Values</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th>Category title C</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Field Name</td>
+                        <td>Field Values</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
